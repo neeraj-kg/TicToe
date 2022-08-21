@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Concert+One&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.Container{
+display: grid;
+grid-template-rows: repeat(3, 10vw);
+grid-template-columns: repeat(3, 10vw);
+font-family: 'Baloo Bhaina 2', cursive;
+position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(223, 204, 241);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.info{
+    font-size: 25px;
+}
+.gameinfo{
+    padding: 0 40px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bd-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 2px;
+    padding: 6px;
+    background-color: rgb(238, 204, 239);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: revert;
+}
+.line{
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: blueviolet;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px)
+{
+.gameContainer{
+  flex-wrap: wrap;  
+}
+.gameinfo{
+    margin-top: 25px;
+}
+ .gameinfo h1{
+    font-size: 1.5rem;
+ }
+ .Container{
+    display: grid;
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+ }
+}
